@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Nav from "./Components/Nav/Nav";
+import Galerie from "./Pages/Galerie/Galerie";
+import Kontakt from "./Pages/Kontakt/Kontakt";
+import Oeffnungszeiten from "./Pages/Oeffnungszeiten/Oeffnungszeiten";
+import Speisekarte from "./Pages/Speisekarte/Speisekarte";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<div className="App">
+				<Nav />
+				<Routes>
+					<Route path="/Speisekarte" element={<Speisekarte />}></Route>
+					<Route path="/Kontakt" element={<Kontakt />}></Route>
+					<Route path="/Oeffnungszeiten" element={<Oeffnungszeiten />}></Route>
+					<Route path="/Galerie" element={<Galerie />}></Route>
+				</Routes>
+			</div>
+		</BrowserRouter>
+	);
 }
 
 export default App;

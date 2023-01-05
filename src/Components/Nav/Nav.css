@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #f8e3d7;
+}
+header > div {
+  display: flex;
+  align-items: center;
+  color: #f9bcd5;
+  gap: 1rem;
+}
+header > div > div {
+  background-color: #c3e7ff;
+  color: #246c77;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > div > div p {
+  font-size: 3rem;
+  padding: 0 0.5rem;
+  font-weight: 900;
+}
+header > div h1 {
+  text-shadow: 0 0 5px #fff;
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 5rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style: none;
+}
+header nav ul li {
+  padding: 0.5rem 1rem;
+  background-color: #90d8dd;
+  border: 1px solid #fab4d8;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 600;
+}
+header nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+header nav ul li:hover {
+  scale: 1.05;
+}
+
+.unterseite h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  background-color: #90d8dd;
+  padding: 0.25rem;
+}/*# sourceMappingURL=Nav.css.map */
